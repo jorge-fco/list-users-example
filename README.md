@@ -1,2 +1,2 @@
-# list-users-example
+# List users example.
 Table

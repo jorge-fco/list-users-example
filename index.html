@@ -7,30 +7,95 @@
 	<!--TITLE-->
 	<title>List items users</title>
 
+	<!--ICONS-->
+	<script src="https://kit.fontawesome.com/4643810438.js" crossorigin="anonymous"></script>
+
 	<!--CSS-->
-	<link rel="stylesheet" href="assets/css/main.css?v=0.01">
+	<link rel="stylesheet" href="assets/css/main.css?v=0.04">
 </head>
 <body>
 	<header class="header">
 		<div class="header__layout">
-			<h1>Dashboard</h1>
+			<div class="header__logo">
+				<a href="#">
+					<i class="fas fa-shopping-cart"></i>
+					Hello-Commerce
+				</a>
+			</div>
 		</div>
 	</header>
 
 	<main class="page">
 		<section class="page__section">
 			<div class="page__layout">
+				<div class="page__title">
+					<h1>Mis pedidos</h1>
+				</div>
+
+				<div class="page__header">
+					<div class="" role="row">
+						<div class="">
+							
+						</div>
+						<div class="">
+							
+						</div>
+					</div>
+				</div>
+
 				<table class="page__table">
 					<thead>
 						<tr>
 							<th>
-								<label>Title</label>
+								<label>ID</label>
+							</th>
+							<th>
+								<label>Nombre</label>
+							</th>
+							<th>
+								<label>Productos</label>
+							</th>
+							<th>
+								<label>Estatus</label>
+							</th>
+							<th>
+								<label>Fecha</label>
+							</th>
+							<th>
+								<label>Total</label>
 							</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>data</td>
+							<td>
+								<a href="#">
+									#12345
+								</a>
+							</td>
+							<td>
+								<div class="username__row" role="row">
+									<div class="username__thumb" role="thumb">
+										<i class="far fa-smile"></i>
+									</div>
+									<div class="username__name">Jorge Fco.</div>
+								</div>
+							</td>
+							<td>
+								Nombre del producto
+							</td>
+							<td>
+								<label class="is-pending" data-status>
+									<span></span>
+									Pendiente
+								</label>
+							</td>
+							<td>
+								<time data-time>12/08/2020</time>
+							</td>
+							<td>
+								<data data-price>$1,200 MXN</data>
+							</td>
 						</tr>
 					</tbody>
 				</table>

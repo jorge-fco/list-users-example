@@ -1,2 +1,6 @@
 # List users example.
-Table
+Table list items
+
+### Inspired by.
+- https://tailwindcss.com/
+- https://dribbble.com/asana

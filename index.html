@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!--TITLE-->
 	<title>List items users</title>
@@ -10,16 +11,20 @@
 	<!--ICONS-->
 	<script src="https://kit.fontawesome.com/4643810438.js" crossorigin="anonymous"></script>
 
+	<!--FONT-->
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+
 	<!--CSS-->
-	<link rel="stylesheet" href="assets/css/main.css?v=0.04">
+	<link rel="stylesheet" href="assets/css/main.css?v=0.09">
 </head>
 <body>
 	<header class="header">
 		<div class="header__layout">
 			<div class="header__logo">
 				<a href="#">
-					<i class="fas fa-shopping-cart"></i>
-					Hello-Commerce
+					<i class="fas fa-couch"></i>
+					Mueble<span>Box</span>
 				</a>
 			</div>
 		</div>
@@ -28,24 +33,85 @@
 	<main class="page">
 		<section class="page__section">
 			<div class="page__layout">
+				<!--TITLE-->
 				<div class="page__title">
-					<h1>Mis pedidos</h1>
-				</div>
-
-				<div class="page__header">
-					<div class="" role="row">
-						<div class="">
-							
+					<div class="page__title__row">
+						<div class="page__title__icon">
+							<i class="fas fa-truck"></i>
 						</div>
-						<div class="">
-							
+						<div class="page__title__name">
+							<h1>Mis pedidos.</h1>
 						</div>
 					</div>
 				</div>
+				<!--TITLE-->
+
+				<!--TABLE HEADER-->
+				<div class="page__header__actions">
+					<div class="page__header__buttons">
+						<button type="button">
+							<i class="fas fa-chart-bar"></i>
+							Reporte de ingresos
+						</button>
+						<button type="button">
+							<i class="far fa-file-excel"></i>
+							Exportar para Excel
+						</button>
+						<button type="button">
+							<i class="far fa-file-alt"></i>
+							Descargar ordernes
+						</button>
+						<button type="button">
+							<i class="fas fa-print"></i>
+							Imprimir ordernes
+						</button>
+					</div>
+				</div>
+				<div class="page__header">
+					<!--ROW-->
+					<div class="page__header__row" role="row">
+						<!--SEARCH-->
+						<div class="page__header__column is-left" role="column">
+							<div class="page__header__search">
+								<form action="#" method="get" accept-charset="utf-8">
+									<div class="page__header__search__row" role="row">
+										<div class="page__header__search__input">
+											<input type="text" name="" placeholder="Search...">
+										</div>
+										<div class="page__header__search__button">
+											<button type="submit">
+												<i class="fas fa-search"></i>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<!--SEARCH-->
+
+						<!--FILTER-->
+						<div class="page__header__column is-right" role="column">
+							<div class="page__header__filter">
+								<select name="filter">
+									<option selected>Filter by</option>
+									<option value="">Pagado</option>
+									<option value="">Pendiente</option>
+									<option value="">Cancelado</option>
+								</select>
+							</div>
+						</div>
+						<!--FILTER-->
+					</div>
+					<!--ROW-->
+				</div>
+				<!--TABLE HEADER-->
 
 				<table class="page__table">
 					<thead>
 						<tr>
+							<th>
+								<label>#</label>
+							</th>
 							<th>
 								<label>ID</label>
 							</th>
@@ -67,18 +133,22 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
+						<!--01-->
+						<tr data-num="1">
+							<td>
+								<span>1</span>
+							</td>
 							<td>
 								<a href="#">
-									#12345
+									#00001
 								</a>
 							</td>
 							<td>
 								<div class="username__row" role="row">
-									<div class="username__thumb" role="thumb">
-										<i class="far fa-smile"></i>
+									<div class="username__thumb is-thumb--1" role="thumb">
+										<img src="https://images.generated.photos/4voaZpmJm16gq2PfLZ8ixunxLqHmQei_E18RcMHZKRI/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Ry/YW5zcGFyZW50X3Yz/L3YzXzA0OTk5Nzgu/cG5n.png" alt="Website">
 									</div>
-									<div class="username__name">Jorge Fco.</div>
+									<div class="username__name">Iker Cano</div>
 								</div>
 							</td>
 							<td>
@@ -91,20 +161,294 @@
 								</label>
 							</td>
 							<td>
-								<time data-time>12/08/2020</time>
+								<time data-time>12/04/2020</time>
 							</td>
 							<td>
 								<data data-price>$1,200 MXN</data>
 							</td>
 						</tr>
+						<!--01-->
+
+						<!--02-->
+						<tr data-num="2">
+							<td>
+								<span>2</span>
+							</td>
+							<td>
+								<a href="#">
+									#00002
+								</a>
+							</td>
+							<td>
+								<div class="username__row" role="row">
+									<div class="username__thumb is-thumb--2" role="thumb">
+										<img src="https://images.generated.photos/YmHqjARCeOufb1XZzJ3lkyCmrCAQZBOWBtkpzd7BlSA/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Ry/YW5zcGFyZW50X3Yz/L3YzXzAzOTcxODcu/cG5n.png" alt="Website">
+									</div>
+									<div class="username__name">Andrea Tapia</div>
+								</div>
+							</td>
+							<td>
+								Nombre del producto
+							</td>
+							<td>
+								<label class="is-success" data-status>
+									<span></span>
+									Pagado
+								</label>
+							</td>
+							<td>
+								<time data-time>04/06/2020</time>
+							</td>
+							<td>
+								<data data-price>$3,200 MXN</data>
+							</td>
+						</tr>
+						<!--02-->
+
+						<!--03-->
+						<tr data-num="3">
+							<td>
+								<span>3</span>
+							</td>
+							<td>
+								<a href="#">
+									#00003
+								</a>
+							</td>
+							<td>
+								<div class="username__row" role="row">
+									<div class="username__thumb is-thumb--3" role="thumb">
+										<img src="https://images.generated.photos/ePRuLMdBcNf-K759WAnm2JZ7sU1ECpTe4gObPZnXZNg/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Ry/YW5zcGFyZW50X3Yz/L3YzXzAxMjYxOTAu/cG5n.png" alt="Website">
+									</div>
+									<div class="username__name">Raquel Merino</div>
+								</div>
+							</td>
+							<td>
+								Nombre del producto
+							</td>
+							<td>
+								<label class="is-cancelled" data-status>
+									<span></span>
+									Cancelado
+								</label>
+							</td>
+							<td>
+								<time data-time>08/06/2020</time>
+							</td>
+							<td>
+								<data data-price>$9,100 MXN</data>
+							</td>
+						</tr>
+						<!--03-->
+
+						<!--04-->
+						<tr data-num="4">
+							<td>
+								<span>4</span>
+							</td>
+							<td>
+								<a href="#">
+									#00004
+								</a>
+							</td>
+							<td>
+								<div class="username__row" role="row">
+									<div class="username__thumb is-thumb--4" role="thumb">
+										<img src="https://images.generated.photos/ywK5MhEHq0N_TMEALpxcnvJL3q1PnaFLDCjNKhxBR10/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Ry/YW5zcGFyZW50X3Yz/L3YzXzAwNjIyMjUu/cG5n.png" alt="Website">
+									</div>
+									<div class="username__name">Javier Amador Segundo</div>
+								</div>
+							</td>
+							<td>
+								Nombre del producto
+							</td>
+							<td>
+								<label class="is-pending" data-status>
+									<span></span>
+									Pendiente
+								</label>
+							</td>
+							<td>
+								<time data-time>18/03/2020</time>
+							</td>
+							<td>
+								<data data-price>$5,300 MXN</data>
+							</td>
+						</tr>
+						<!--04-->
+
+						<!--05-->
+						<tr data-num="05">
+							<td>
+								<span>5</span>
+							</td>
+							<td>
+								<a href="#">
+									#00005
+								</a>
+							</td>
+							<td>
+								<div class="username__row" role="row">
+									<div class="username__thumb is-thumb--1" role="thumb">
+										<img src="https://images.generated.photos/5UEiQXcU5BuoCFA40kfPoGg7EhPGrdW0y1apUDWe-WU/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Ry/YW5zcGFyZW50X3Yz/L3YzXzA5OTkwMzgu/cG5n.png" alt="Website">
+									</div>
+									<div class="username__name">Iker Cano</div>
+								</div>
+							</td>
+							<td>
+								Nombre del producto
+							</td>
+							<td>
+								<label class="is-pending" data-status>
+									<span></span>
+									Pendiente
+								</label>
+							</td>
+							<td>
+								<time data-time>12/04/2020</time>
+							</td>
+							<td>
+								<data data-price>$1,200 MXN</data>
+							</td>
+						</tr>
+						<!--05-->
+
+						<!--06-->
+						<tr data-num="6">
+							<td>
+								<span>6</span>
+							</td>
+							<td>
+								<a href="#">
+									#00006
+								</a>
+							</td>
+							<td>
+								<div class="username__row" role="row">
+									<div class="username__thumb is-thumb--2" role="thumb">
+										<img src="https://images.generated.photos/LHmPQuoYUCkFlnQCnFB7kzIDFMT425FbE4Oz7AaSaWE/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Ry/YW5zcGFyZW50X3Yz/L3YzXzAyNjAxOTQu/cG5n.png" alt="Website">
+									</div>
+									<div class="username__name">Andrea Tapia</div>
+								</div>
+							</td>
+							<td>
+								Nombre del producto
+							</td>
+							<td>
+								<label class="is-success" data-status>
+									<span></span>
+									Pagado
+								</label>
+							</td>
+							<td>
+								<time data-time>04/06/2020</time>
+							</td>
+							<td>
+								<data data-price>$3,200 MXN</data>
+							</td>
+						</tr>
+						<!--06-->
+
+						<!--07-->
+						<tr data-num="7">
+							<td>
+								<span>7</span>
+							</td>
+							<td>
+								<a href="#">
+									#00007
+								</a>
+							</td>
+							<td>
+								<div class="username__row" role="row">
+									<div class="username__thumb is-thumb--3" role="thumb">
+										<img src="https://images.generated.photos/HUK0McNi9IAdfrhGyAZE_9GjjSIkfTF8UtDaFL4AS7E/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Ry/YW5zcGFyZW50X3Yz/L3YzXzA0MDU0MDgu/cG5n.png" alt="Website">
+									</div>
+									<div class="username__name">Raquel Merino</div>
+								</div>
+							</td>
+							<td>
+								Nombre del producto
+							</td>
+							<td>
+								<label class="is-cancelled" data-status>
+									<span></span>
+									Cancelado
+								</label>
+							</td>
+							<td>
+								<time data-time>08/06/2020</time>
+							</td>
+							<td>
+								<data data-price>$9,100 MXN</data>
+							</td>
+						</tr>
+						<!--07-->
+
+						<!--08-->
+						<tr data-num="8">
+							<td>
+								<span>8</span>
+							</td>
+							<td>
+								<a href="#">
+									#00008
+								</a>
+							</td>
+							<td>
+								<div class="username__row" role="row">
+									<div class="username__thumb is-thumb--4" role="thumb">
+										<img src="https://images.generated.photos/Bzw7BhgPvEE-fylXaI78vTls6cH710dX6ME32ZSx5JI/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Ry/YW5zcGFyZW50X3Yz/L3YzXzA5Nzg0Mzku/cG5n.png" alt="Website">
+									</div>
+									<div class="username__name">Javier Amador Segundo</div>
+								</div>
+							</td>
+							<td>
+								Nombre del producto
+							</td>
+							<td>
+								<label class="is-pending" data-status>
+									<span></span>
+									Pendiente
+								</label>
+							</td>
+							<td>
+								<time data-time>18/03/2020</time>
+							</td>
+							<td>
+								<data data-price>$5,300 MXN</data>
+							</td>
+						</tr>
+						<!--08-->
 					</tbody>
 				</table>
+
+				<div class="page__table__footer">
+					<a href="#" class="button button-primary" role="button">
+						Ver todas las ordenes
+						<i class="fas fa-arrow-right"></i>
+					</a>
+				</div>
 			</div>
 		</section>
 	</main>
 
-	<footer class="">
-		
+	<footer class="footer">
+		<div class="footer__logo">
+			<h4>Mueble<span>Box</span></h4>
+			<a href="#">
+				<i class="fas fa-phone"></i>
+				(33) 1234-5678
+			</a>
+			<br>
+			<a href="#">
+				<i class="fas fa-envelope"></i>
+				contacto@mueblebox.io
+			</a>
+		</div>
+		<div class="footer__bottom">
+			<span>©2020 Todos los derechos reservados.</span>
+		</div>
 	</footer>
 </body>
 </html>

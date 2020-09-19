@@ -16,19 +16,81 @@
 	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
 
 	<!--CSS-->
-	<link rel="stylesheet" href="assets/css/main.css?v=0.09">
+	<link rel="stylesheet" href="assets/css/main.css?v=1.00">
 </head>
 <body>
 	<header class="header">
 		<div class="header__layout">
-			<div class="header__logo">
-				<a href="#">
-					<i class="fas fa-couch"></i>
-					Mueble<span>Box</span>
-				</a>
+			<!--ROW-->
+			<div class="header__row" role="row">
+				<div class="header__column">
+					<div class="header__title">
+						<h4>Dashboard</h4>
+					</div>
+				</div>
+				<div class="header__column">
+					<div class="header__username">
+						<div class="header__username__row" role="row">
+							<div class="header__username__name">
+								<span>Hola, <data>Jorge Fco</data></span>
+							</div>
+							<div class="header__username__thumb">
+								<div class="header__username__image">
+									<i class="far fa-smile"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+			<!--ROW-->
 		</div>
 	</header>
+
+	<aside class="aside">
+		<!--LOGO-->
+		<div class="aside__logo">
+			<a href="#">
+				<i class="fas fa-couch"></i>
+				Mueble<span>Box</span>
+			</a>
+		</div>
+		<!--LOGO-->
+
+		<div class="aside__navigation">
+			<div class="aside__title">
+				<h4>Opciones</h4>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">
+							<i class="fas fa-home"></i>
+							Inicio
+						</a>
+					</li>
+					<li>
+						<a href="#" class="is-active">
+							<i class="fas fa-truck"></i>
+							Pediddos
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fas fa-shopping-bag"></i>
+							Productos
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fas fa-dolly-flatbed"></i>
+							Materiales
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
 
 	<main class="page">
 		<section class="page__section">
@@ -424,10 +486,20 @@
 				</table>
 
 				<div class="page__table__footer">
-					<a href="#" class="button button-primary" role="button">
-						Ver todas las ordenes
-						<i class="fas fa-arrow-right"></i>
-					</a>
+					<div class="page__table__footer__row">
+						<div class="page__table__footer__help">
+							<a href="#" class="button button-default" role="button">
+								<i class="fas fa-question-circle"></i>
+								Ayuda
+							</a>
+						</div>
+						<div class="page__table__footer__link">
+							<a href="#" class="button button-primary" role="button">
+								Ver todas las ordenes
+								<i class="fas fa-arrow-right"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -436,12 +508,12 @@
 	<footer class="footer">
 		<div class="footer__logo">
 			<h4>Mueble<span>Box</span></h4>
-			<a href="#">
+			<a href="#" target="_blank">
 				<i class="fas fa-phone"></i>
 				(33) 1234-5678
 			</a>
 			<br>
-			<a href="#">
+			<a href="#" target="_blank">
 				<i class="fas fa-envelope"></i>
 				contacto@mueblebox.io
 			</a>
